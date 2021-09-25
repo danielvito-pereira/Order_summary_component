@@ -17,12 +17,13 @@ p {
     color: var(--Desaturatedblue);
 }
 .man-container{
+    display: flex;
     height: 100vh;
     width: 100vw;
     background: url(/images/pattern-background-mobile.svg);
     background-repeat: no-repeat;
     background-color: var(--Paleblue);
-    
+    background-size: 100%;
 }
 
 .container {
@@ -54,10 +55,11 @@ p {
     align-items: center;
     justify-content: space-between;
     background-color: var(--Verypaleblue);
-    height:100%;
-    width: 70%;
-    border-radius:10px;
+    height: 12%;
+    width: 82%;
+    border-radius:15px;
     padding: 10px;
+    margin: auto;
     text-align: center;
 }
 .valor button {
@@ -90,24 +92,6 @@ p {
 } 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .attribution { 
     font-size: 11px; 
     text-align: center; 
@@ -117,3 +101,28 @@ p {
      color: hsl(228, 45%, 44%);
      display: none;
      }
+
+
+
+@media (min-width:1440px) {
+    .man-container{
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        background: url(/images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-color: var(--Paleblue);
+        background-size: 100%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 1440px;
+        height:80%;
+        background-color: var(--Verypaleblue);
+        background-color:white;
+        margin: auto;
+        border-radius:5%;
+    }
+}
